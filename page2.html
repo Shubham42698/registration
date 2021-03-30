@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Second Page
+        </title>
+        <style>
+            h1{
+                text-align: center;
+            }
+            #myid:hover{
+                cursor: crosshair;
+            }
+            h3{
+              text-align: center;
+            }
+            .magic{
+              display:none;
+              position:absolute;
+              width:100px;
+              height:100px;
+            }
+            .seen{
+              position: relative;
+              left:300px;
+              display: inline-block;
+            }
+            .seen:hover .magic{
+              width:300px;
+              height:300px;
+              background-color: pink;
+              display:block;
+            }
+            #example2{
+              display:none;
+              text-align: center;
+            }
+            body{
+              background-color: lightgreen;
+            }
+
+            @media only screen and (max-width: 600px){
+              body {
+                background-color: lightblue;
+              }
+    }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+      	<script src="script.js"></script>
+        <body>
+            <h1 id="heading">SECOND PAGE</h1>
+            <img src="C:\Users\guest account\Pictures\maindice.jpg" width="200px" height="200px">
+            <video width="500" height="500" controls>
+                <source src="mov_bbb.mp4" type="video/mp4">
+            </video>
+            <p id="myid">Here we are using the cursor attribute where the mouse pointer changes accordingly when we hover our mouse on that particular element</p>
+            <h3 id="drag">This is a draggable Element</h3>
+            <div class="seen">
+              <h1>In Seen Div</h1>
+              <div class="magic">
+                <h1>In Magic Div</h1>
+              </div>
+            </div>
+            <p id="example1">This paragraph tag hover and when it is hover another paragraph should display we are using jquery </p>
+            <p id="example2">hye you called me</p>
+            <p id="example3">This paragraph tag hover and when it is hover another paragraph should display we are using jquery </p>
+            <p id="example4">You can hide me if you want</p>
+            <h3 id="example5">I am a unknown person and </h3>
+            <h3 id="example6">you can hide me if you want </h3>
+
+        </body>
+    </head>
+</html>
